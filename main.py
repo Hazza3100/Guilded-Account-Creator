@@ -17,10 +17,7 @@ def Gen():
     try:
         global created
         proxy = random.choice(open('proxies.txt', 'r').read().splitlines())
-
-        proxies = {
-            'http': f'http://{proxy}', 'https': f'http://{proxy}'
-        }
+        proxies = {'http': f'http://{proxy}', 'https': f'http://{proxy}'}
 
         name     = ''.join(random.choices('poiuytrewqlkjhgfdsamnbvcxz098765431', k=7))
         email    = ''.join(random.choices('poiuytrewqlkjhgfdsamnbvcxz098765431', k=8)) + '@gmail.com'
@@ -44,7 +41,6 @@ def Gen():
             'user-agent'             : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
             'x-requested-with'       : 'XMLHttpRequest',
         }
-
 
         json = {
             'extraInfo': {
