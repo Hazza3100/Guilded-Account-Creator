@@ -87,7 +87,7 @@ def Gen():
                     'x-requested-with': 'XMLHttpRequest',
                 }
 
-                params_ = {'teamId': 'yjKK79pj','includeLandingChannel': 'true',}
+                params_ = {'teamId': f'{invite}','includeLandingChannel': 'true',}
 
                 __json = {'type': 'consume',}
                 response = requests.put(f'https://www.guilded.gg/api/invites/{invite}', params=params_, headers=__headers__, json=__json, proxies=proxies)
