@@ -6,7 +6,7 @@ import threading
 
 from colorama import Fore
 
-invite = "ENZ4d0jE"
+invite = "2OO618j2"
 created = 0
 
 def get_rstr(lenght: int) -> str:
